@@ -1,22 +1,13 @@
-import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-import { Button, View } from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
 
-export default function StartScreen() {
-  const navigation = useNavigation();
-
+export default function DetailsScreen() {
   return (
-    <View>  
-        {/* <Logo/> */}
-
-        <Button
-        title="Entrar"
-        onPress={() => navigation.navigate('LoginScreen')}
-      />
-
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Details Screen</Text>
       <Button
-        title="Criar uma conta"
-        onPress={() => navigation.navigate('HomeScreen')}
+        title="Go to Details"
+        onPress={() => navigation.navigate("LoginScreen")}
       />
     </View>
   );

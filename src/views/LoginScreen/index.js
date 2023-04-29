@@ -1,33 +1,14 @@
-import React, { useState } from 'react';
-import { View, TextInput, Button } from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
 
-const LoginScreen = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-  
-    const handleLogin = () => {
-      // Lógica de autenticação aqui
-    };
-  
-    return (
-      <View>
-        <TextInput
-          placeholder="Email"
-          value={email}
-          onChangeText={text => setEmail(text)}
-        />
-  
-        <TextInput
-          placeholder="Password"
-          value={password}
-          onChangeText={text => setPassword(text)}
-          secureTextEntry
-        />
-  
-        <Button title="Login" onPress={handleLogin} />
-      </View>
-    );
-  };
-  
-  export default LoginScreen;
-  
+export default function LoginScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Login Screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate("HomeScreen")}
+      />
+    </View>
+  );
+}
