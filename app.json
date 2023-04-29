@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f3966a30-8ade-4fcd-800e-00eb322a11ba"
+      }
+    },
+    "owner": "yellowildsun"
   }
 }
