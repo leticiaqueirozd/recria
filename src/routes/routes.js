@@ -1,17 +1,19 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import StartScreen from '../views/HomeScreen/StartScreen';
+import StartScreen from '../views/StartScreen';
 import LoginScreen from '../views/LoginScreen';
 import HomeScreen from '../views/HomeScreen';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator ();
 
-const Rotas = () => {
+function Rotas() {
   return (
-    <Stack.Navigator>
+    <Drawer.Navigator>
       <Stack.Screen name="Start" component={StartScreen} />
-      <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
+      <Drawer.Screen name="Login" component={LoginScreen} />
+      <Drawer.Screen name="Home" component={HomeScreen} />
+    </Drawer.Navigator>
   );
 };
 

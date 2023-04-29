@@ -11,12 +11,12 @@ export default function StartScreen() {
 
         <Button
         title="Entrar"
-        onPress={() => navigation.navigate('Entrar')}
+        onPress={() => navigation.navigate('LoginScreen')}
       />
 
       <Button
         title="Criar uma conta"
-        onPress={() => navigation.navigate('Criar')}
+        onPress={() => navigation.navigate('HomeScreen')}
       />
     </View>
   );
